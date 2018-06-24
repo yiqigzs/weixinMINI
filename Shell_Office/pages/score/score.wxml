@@ -1,0 +1,27 @@
+<!--score.wxml  -->
+<!--表格布局  -->
+<view class='table'>
+  <view class='tr-top'>
+    <picker class='picker' mode="selector" bindchange='picker' value='{{index}}' range='{{termsCount}}'>
+      <view class=" terms row">
+        <view>
+          {{termsCount[index]}}
+        </view>
+        <view>
+          <image src='../../data/images/more.png' width="68rpx" height="68rpx"/> 
+        </view>
+      </view>
+    </picker>
+  </view>
+   <view class='tr-head'> 
+    <view class='th-left'>课程</view>
+    <view class='th-right'>成绩</view>
+   </view> 
+  
+  <block wx:for="{{termsInfo[index]}}" wx:key="{{name}}" wx:for-index="idx" >
+      <view class="tr-list">
+        <view class="td-left">{{idx}}</view>
+        <view class="td-right">{{item}}</view>
+      </view>
+  </block>
+</view>

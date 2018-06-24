@@ -1,0 +1,54 @@
+.main{
+  width: 100%;
+  height:100%;
+}
+.head{
+  width: 100%;
+  height:80rpx;
+}
+.picker{
+  text-align: center;
+}
+.content{
+  width: 100%;
+  height: 100%;
+}
+.row{
+  display: flex;
+}
+.r_item{
+  margin-left:5rpx;
+  text-align: center;
+  line-height: 80rpx;
+  width: 130rpx;
+  height: 80rpx;
+}
+.c_item{
+  text-align: center;
+  line-height: 180rpx;
+  width: 60rpx;
+  height: 200rpx;
+}
+.data{
+  width: 640rpx;
+  height: 1000rpx;
+  position:absolute;
+  left: 80rpx;
+  top:160rpx;
+}
+.d_item{
+  text-align: center;
+  width: 130rpx;
+  height: 200rpx;
+  margin-left: 5rpx;
+}
+.d_item_txt{
+  width: 100rpx;
+  height: 150rpx;
+  padding-top: 25rpx;
+}
+.d_item_txt1{
+  width: 130rpx;
+  height: 150rpx;
+  padding-top: 25rpx;
+}

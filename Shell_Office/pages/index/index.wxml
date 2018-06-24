@@ -1,0 +1,48 @@
+  <!--index.wxml-->
+<view class='container'>
+  <view class="userinfo row">
+    <image class="userinfo-avatar" src="../../data/images/header.png" background-size="cover"></image>
+    <view class='content'>
+      <view class='col content_detail'>
+        <text class="content_detail_inner">{{userInfo.university}}</text>
+        <text class="content_detail_inner">姓名:{{userInfo.name}}</text>
+        <text class="content_detail_inner">学号:{{userInfo.snum}}</text>
+        <text class="content_detail_inner">班级:{{userInfo.classname}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='allset' id='score' >
+    <view class='options round' bindtap='clickScore'>
+        <image class="options_image" src='../../data/images/grade.png' />   
+        <text class='set_text' style='display: block;'>考试成绩</text>
+    </view>
+
+    <view class='options round' id='choseClass' bindtap='clickChosed' >
+        <image class="options_image" src='../../data/images/select.png'/>
+        <text class='set_text'style='display: block;'>选课管理</text>
+    </view>
+
+    <view class='options round' id='schoolRoll' bindtap='clickSchoolRoll'>
+        <image class="options_image" src='../../data/images/info.png' />
+        <text class='set_text' style='display: block;'>学籍信息</text>
+    </view>
+
+    <view class='options round' id='calendar'  bindtap='clickcalendar'>
+        <image class="options_image" src='../../data/images/cal.png' />
+        <text class='set_text' style='display: block;'>校历查询</text>
+    </view>
+    
+  </view>
+
+  <view>
+    <view class='logout round row' bindtap='clickLogout' id='logout'>
+      <view class='set_left'>
+        <image class="logout_image" src='../../data/images/logout.png' />
+      </view>
+      <view class='set_right'>
+        <text class='set_text'>注销</text>
+      </view>
+    </view>
+  </view>
+</view>

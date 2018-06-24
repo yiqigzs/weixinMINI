@@ -1,0 +1,8 @@
+<view class='calPage'>
+  <view class='calender'>
+  <image  class='calimg' src="../../data/images/calender.jpg" mode='widthFix' ></image>
+  </view>
+
+  <!-- <button class='preview' bindtap='preview'>查看大图</button> -->
+
+</view>

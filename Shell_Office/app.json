@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/score/score",
+    "pages/calendar/calendar",
+    "pages/index/index",
+    "pages/classChosed/classChosed",
+    "pages/schoolRoll/schoolRoll",
+    "pages/classSchedule/classSchedule"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "navigationBarBackgroundColor": "#fff"
+}

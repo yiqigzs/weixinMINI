@@ -1,0 +1,23 @@
+
+.table {
+  border:1px solid #dadada;
+  width:100%; 
+}
+
+/*标题 */
+ .tr-head{
+  display: flex;
+  background-color: #2BF0F0; 
+  text-align: center;
+} 
+.tr-list{
+  display: flex;
+  justify-content: space-between;
+}
+.tr-head,.tr-list {
+  padding-top: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%;
+}

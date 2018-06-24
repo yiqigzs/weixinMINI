@@ -1,0 +1,182 @@
+/**index.wxss**/
+
+.container {
+  margin: 30rpx;
+}
+/*页顶个人信息  */
+.userinfo {
+  animation: bounce 1s; 
+  padding: 10rpx;
+  height: 230rpx;
+  background-color:#2BF0F0;
+  border-radius:5px; 
+}
+/*头像设置*/
+.userinfo-avatar{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 50%;
+}
+
+.round {
+  /* background-color: #ededed; */
+  border-radius: 10rpx;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+ .col {
+  display: flex;
+  flex-direction: column;
+} 
+
+.content {
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+
+.content_detail {
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+  text-align: left;
+}
+
+.content_detail_inner {
+  margin-top: 15rpx;
+}
+
+/*功能列表  */
+
+.options{
+  display: inline-block;
+  text-align: center;
+  width: 230rpx;
+  height: 236rpx;
+}
+.options_image{
+  width: 120rpx;
+  height: 120rpx;
+  text-align: center;
+  margin-top: 26rpx;
+}
+.set_text{
+  text-align: center; 
+}
+
+ .allset {
+  padding-top: 20rpx;
+  margin-top: 30rpx;
+} 
+
+.options_row {
+  animation: bounceIn 1s;
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+}
+/*注销按钮 */
+.set_left {
+  width: 20%;
+  padding-left: 10%;
+}
+.set_right {
+  width: 40%;
+  margin: auto;
+}
+.logout {
+  animation: bounceIn 1s;
+  padding: 10rpx;
+  border: 1px solid #2BF0F0;
+}
+.logout_image {
+  width: 68rpx;
+  height: 68rpx;
+}
+#logout{
+  margin-top: 100rpx
+}
+
+@keyframes bounce {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

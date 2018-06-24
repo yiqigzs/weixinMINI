@@ -1,0 +1,47 @@
+<view class='main'>
+  <view class='head'>
+    <picker class='picker' bindchange='picker' value='{{index}}' range='{{array}}'>
+      <view>
+        <view>
+          {{array[index]}}
+        </view>
+        <view>
+          {{array1[index]}}
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class='content'>
+    <view class='row'>
+      <view><text decode='true'>&emsp;&emsp;</text></view>
+      <view class='r_item'>周一</view>
+      <view class='r_item'>周二</view>
+      <view class='r_item'>周三</view>
+      <view class='r_item'>周四</view>
+      <view class='r_item'>周五</view>
+    </view>
+    <view class='colum'>
+      <view class='c_item'>1</view>
+      <view class='c_item'>2</view>
+      <view class='c_item'>3</view>
+      <view class='c_item'>4</view>
+      <view class='c_item'>5</view>
+    </view>
+    <view class='data'>
+      <view style='display:flex;flex-direction:column;' wx:for="{{[1,2,3,4,5]}}" wx:for-item="i">
+        <view style='display:flex;flex-direction:row;'>
+          <view wx:for="{{[1,2,3,4,5]}}" wx:for-item="j">
+            <view class='d_item' animation="{{array2[j+5*(i-1)-1]}}" bindtap='change'>
+              <view id='{{list[j+5*(i-1)-1].id}}' class='d_item_txt' wx:if="{{list[j+5*(i-1)-1].id==id}}" interval="{{1000}}">
+                {{list[j+5*(i-1)-1].area}}
+              </view>
+              <view wx:else id='{{list[j+5*(i-1)-1].id}}' class='d_item_txt'>
+                {{list[j+5*(i-1)-1].name}}
+              </view>
+            </view>
+          </view>  
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

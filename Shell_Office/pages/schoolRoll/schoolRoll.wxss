@@ -1,0 +1,45 @@
+.table {
+  border:1px solid #dadada;
+  width:100%; 
+}
+
+/*类型、内容栏 */
+ .tr-head{
+  display: flex;
+  background-color: #2BF0F0; 
+} 
+.tr-list{
+  display: flex;
+  justify-content: space-between;
+}
+.th-left{
+  width: 40%;
+  height: 1.5rem;
+  align-items: center; 
+  flex-grow: 2;
+}
+.th-right{
+  width: 60%;
+  height: 1.5rem; 
+  align-items: center; 
+  flex-grow: 1;
+}
+.td-left{
+    width:40%;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 2;
+}
+.td-right{
+    width:60%;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+.tr-head,.tr-list {
+  padding-top: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%;
+}

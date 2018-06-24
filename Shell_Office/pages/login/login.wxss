@@ -1,0 +1,70 @@
+/*头像*/
+/* .touxiangjuzhong {
+  height: 90px;
+  display: block;
+  text-align: center;
+  line-height: 150px;
+} */
+
+/* .touxiang {
+  height: 200rpx;
+   width: 800rpx;  
+  vertical-align: middle;
+} */
+/*标题样式  */
+.title{
+  font-size: 32rpx;
+  text-align: center;
+  padding: 50rpx;
+}
+/*页面边缘  */
+.srkjuzhong{
+  padding: 56rpx;
+}
+/*账号密码文本样式  */
+.acctxt,.pwdtxt{
+  font-size: 36rpx;
+  margin: 24rpx auto;
+}
+/*输入框  */
+.srk{
+  border-bottom: 1rpx solid black;
+  opacity: 0.8;
+  margin: 24rpx auto;
+  font-size: 40rpx;
+}
+/*登录按钮  */
+.lend{
+  margin-top: 80rpx;
+  display: block;
+  background-color: #2BF0F0;
+  text-align: center;
+  border-radius: 80rpx;
+}
+/*注意事项  */
+.zhuyi{
+  font-size: 30rpx;
+  line-height: 1.7;
+  padding: auto;
+  margin: 40rpx 18rpx
+}
+
+/*错误提示  */
+.ad_popError{ background: #de352d; color: #fff; height: 70rpx; line-height: 58rpx; font-size: 30rpx; text-align: center; position: absolute; left: 0; top: 0; width: 100%; z-index:3;}
+
+.logpassword{
+  margin: 20rpx;
+  padding: 30rpx;
+}
+
+/* checkbox未选中的 背景样式 */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;/* 圆角 */
+   width: 50rpx; 
+   height: 50rpx; 
+}
+/* 选中后的 背景样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background:#00FA9A;
+}

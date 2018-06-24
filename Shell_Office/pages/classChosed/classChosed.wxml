@@ -1,0 +1,8 @@
+
+<view class='table'>
+  <view class='tr-head'>选课结果</view> 
+  
+  <block wx:for="{{classChosed}}">
+      <view class="tr-list">{{item}}</view>
+  </block>
+</view>

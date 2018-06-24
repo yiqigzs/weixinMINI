@@ -1,0 +1,13 @@
+<view class='table'>
+   <view class='tr-head'> 
+    <view class='th-left'>类型</view>
+    <view class='th-right'>内容</view>
+   </view> 
+  
+  <block wx:for="{{schoolRoll}}" wx:for-index="idx" >
+      <view class="tr-list">
+        <view class="td-left">{{idx}}</view>
+        <view class="td-right">{{item}}</view>
+      </view>
+  </block>
+</view>
